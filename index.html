@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Forresters Barbers — classic cuts, beard trims and hot-towel shaves in Barnstaple. Walk-ins welcome, or book online.">
+  <title>Forresters Barbers — Classic Cuts in Barnstaple</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" data-config="businessName">Forresters Barbers</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#hours">Hours</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-primary header-cta" href="#contact" data-config-href="bookingUrl">Book now</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow" data-config="location">Barnstaple, Devon</p>
+        <h1 data-config="tagline">Sharp cuts. Honest prices. No fuss.</h1>
+        <p class="hero-sub" data-config="heroText">A friendly neighbourhood barber shop. Classic cuts, beard trims and hot-towel shaves — walk in, sit down, leave looking sharp.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact" data-config-href="bookingUrl">Book an appointment</a>
+          <a class="btn btn-secondary" href="#services">See prices</a>
+        </div>
+        <p class="hero-note">Walk-ins welcome &middot; <span data-config="phoneDisplay">01271 000 000</span></p>
+      </div>
+    </section>
+
+    <!-- Services & prices -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services &amp; prices</h2>
+        <p class="section-intro">Simple, fixed prices. No surprises at the till.</p>
+        <ul class="services-list" id="servicesList">
+          <!-- Filled in from SITE_CONFIG.services in script.js -->
+          <li><span class="service-name">Classic cut</span><span class="service-dots" aria-hidden="true"></span><span class="service-price">£18</span></li>
+          <li><span class="service-name">Skin fade</span><span class="service-dots" aria-hidden="true"></span><span class="service-price">£20</span></li>
+          <li><span class="service-name">Beard trim &amp; shape</span><span class="service-dots" aria-hidden="true"></span><span class="service-price">£10</span></li>
+          <li><span class="service-name">Cut &amp; beard combo</span><span class="service-dots" aria-hidden="true"></span><span class="service-price">£25</span></li>
+          <li><span class="service-name">Hot-towel shave</span><span class="service-dots" aria-hidden="true"></span><span class="service-price">£15</span></li>
+          <li><span class="service-name">Kids' cut (under 12)</span><span class="service-dots" aria-hidden="true"></span><span class="service-price">£12</span></li>
+        </ul>
+        <p class="services-note" data-config="servicesNote">Cash and card accepted. Under-16s must be accompanied by an adult.</p>
+      </div>
+    </section>
+
+    <!-- Hours -->
+    <section id="hours" class="section section-alt">
+      <div class="container">
+        <h2>Opening hours</h2>
+        <table class="hours-table" id="hoursTable">
+          <!-- Filled in from SITE_CONFIG.hours in script.js -->
+          <tr><th scope="row">Monday – Friday</th><td>9:00 – 17:30</td></tr>
+          <tr><th scope="row">Saturday</th><td>8:30 – 16:00</td></tr>
+          <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+        </table>
+        <p class="hours-note" data-config="hoursNote">Last walk-in 30 minutes before closing.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About us</h2>
+        <p data-config="aboutText">Forresters Barbers has been cutting hair on the high street for over ten years. No gimmicks — just experienced barbers, sharp tools, and a chair that is always ready. Come in for a cut, stay for a chat.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Find us &amp; get in touch</h2>
+        <div class="contact-grid">
+          <address class="contact-block">
+            <p><strong data-config="businessName">Forresters Barbers</strong><br>
+            <span data-config="address">12 High Street, Barnstaple, Devon EX31 1AA</span></p>
+            <p>Phone: <a href="tel:+441271000000" data-config-href="phoneHref" data-config="phoneDisplay">01271 000 000</a><br>
+            Email: <a href="mailto:hello@example.com" data-config-href="emailHref" data-config="email">hello@example.com</a></p>
+          </address>
+          <div class="contact-block">
+            <p>Prefer to book ahead?</p>
+            <a class="btn btn-primary" href="#" data-config-href="bookingUrl">Book online</a>
+            <p class="contact-note">No booking system yet? Replace the booking link in the config with your phone number or a free booking page (for example Booksy or Fresha) — see the README.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> <span data-config="businessName">Forresters Barbers</span>. All rights reserved.</p>
+      <p class="footer-note">Website built with the <a href="https://github.com/ViraBuilds/mvp-website-starter">MVP Website Starter</a> template.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
